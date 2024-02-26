@@ -1,0 +1,23 @@
+{
+  "name": "web3-hardhat-nft-marketplace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat compile && npx hardhat test",
+    "node": "npx hardhat node",
+    "prod": "npx hardhat compile && npx hardhat run scripts/deploy.ts --network <your-network-name>",
+    "dev": "npx hardhat compile && npx hardhat run scripts/deploy.ts --network localhost"
+  },
+  "keywords": [],
+  "author": "<your-name-goes-here>",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.4",
+    "hardhat": "^2.20.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0"
+  }
+}
